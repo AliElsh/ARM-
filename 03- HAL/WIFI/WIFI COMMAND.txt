@@ -1,0 +1,9 @@
+AT                                       // FOR ENSURE WIFI IS WORKING +ENTER+CRTL-> J
+ATE0                                       // CLOSE ECHO(PRINT)
+ATE1                                       // OPEN ECHO
+AT+CWMODE=1                              // ATCWMODE= 1(WIFI) 2,3(ACCPOINT)  
+AT+CWJAP_CUR="we","Aa123456789"            // TO CONNECT TO WIFI
+AT+CIPSTART="TCP","162.253.155.225",80
+AT+CIPSEND=40
+GET http://myhome.orgfree.com/file.txt
+GET http://test55.freetzi.com/device.txt

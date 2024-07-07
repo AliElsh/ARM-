@@ -1,0 +1,7 @@
+//guard
+
+
+#define STP_SERIAL_DATA      PORTA, PIN0
+#define STP_STORAGE_CLOCK    PORTA, PIN1
+#define STP_SHIFT_CLOCK      PORTA, PIN2
+
